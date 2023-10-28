@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0B0313"
     tools:context=".MainActivity">
 
     <TextView
@@ -30,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="345dp"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/big_bull" />
+            app:srcCompat="@drawable/scam_1992" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -43,57 +44,72 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dosti_music_video"
+            android:text="Scam-1992(Theme Song)"
             android:textSize="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
             android:textStyle="bold"/>
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/stopbutton"
-            app:fabCustomSize="70dp"
+            android:id="@+id/playbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:elevation="100dp"
             android:tint="@color/white"
-            app:srcCompat="@drawable/baseline_play_arrow_24"
-            android:backgroundTint="#">
+            app:backgroundTint="#6D1919"
+            app:fabCustomSize="70dp"
+            app:srcCompat="@drawable/baseline_play_arrow_24">
 
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            app:fabCustomSize="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="100dp"
-            android:layout_gravity="center"
-            android:layout_marginRight="70dp"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/skipback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fabCustomSize="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="70dp"
+            android:elevation="100dp"
+            android:tint="@color/white"
+            app:backgroundTint="#463C3C"
+            app:fabCustomSize="60dp"
+            app:srcCompat="@drawable/baseline_skip_previous_24"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="130dp"
             android:elevation="100dp"
             android:tint="@color/white"
-            app:srcCompat:"@drawable/baseline_shuffle_24"/>
+            app:backgroundTint="#463C3C"
+            app:fabCustomSize="50dp"
+            app:srcCompat="@drawable/baseline_shuffle_24" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/skipnext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fabCustomSize="60dp"
             android:layout_gravity="center"
             android:layout_marginLeft="70dp"
-            android:elevation="100dp"/>
+            android:elevation="100dp"
+            app:backgroundTint="#463C3C"
+            app:srcCompat="@drawable/baseline_skip_next_24"
+            app:fabCustomSize="60dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fabCustomSize="50dp"
-            android:layout_marginLeft="130dp"
             android:layout_gravity="center"
-            android:elevation="100dp"/>
+            android:layout_marginLeft="130dp"
+            android:elevation="100dp"
+            app:backgroundTint="#463C3C"
+            app:srcCompat="@drawable/baseline_stop_24"
+            app:fabCustomSize="50dp" />
 
 
 
