@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity()
                 mediaPlayer.pause()
                 playButton.setImageResource(R.drawable.baseline_play_arrow_24)
             }
+            stopButton.setOnClickListener{
+                mediaPlayer.stop()
+            }
         }
 
             }
